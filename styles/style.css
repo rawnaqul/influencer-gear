@@ -2,6 +2,7 @@
  common styles
 ---------- */
 body {
+    background-color: rgba(240, 248, 255, 0.925);
     font-family: roboto;
     margin: 0;
     padding: 0;
@@ -9,6 +10,19 @@ body {
 
 h1 {
     font-size: 3.5em;
+}
+
+h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+h4 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-weight: 400;
+    font-size: 1.25em;
 }
 
 a {
@@ -24,6 +38,12 @@ a {
     padding: 10px 16px;
     border-radius: 25px;
     margin-top: 20px;
+}
+
+.rating-icons {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: goldenrod;
 }
 
 .container {
@@ -74,4 +94,23 @@ second section styles
     padding: 25px;
     display: flex;
     justify-content: space-between;
+}
+
+/*---------------
+third section styles
+-------------*/
+.product-gallary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.product-card {
+    background-color: white;
+    padding: 8px;
+}
+
+.info-text {
+    margin-top: 6px;
+    margin-bottom: 6px;
+    font-size: .9em;
 }
