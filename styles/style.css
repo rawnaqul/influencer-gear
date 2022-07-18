@@ -1,0 +1,76 @@
+/*-----------
+ common styles
+---------- */
+body {
+    font-family: roboto;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+a {
+    font-size: 1.25em;
+    font-weight: 500;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.button-i {
+    border: none;
+    background-color: #e02c6ef3;
+    padding: 10px 16px;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.nav-style {
+    list-style-type: none;
+    display: flex;
+}
+
+li {
+    padding: 10px;
+}
+
+.nav-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+/*-----------
+hero section styles
+-------------*/
+.hero-container {
+    margin-top: 50px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-arrow-right {
+    margin-left: 5px;
+}
+
+/*--------------
+second section styles
+----------*/
+.partner-logo {
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+}
