@@ -8,6 +8,14 @@ body {
     padding: 0;
 }
 
+header {
+    padding: 10px;
+}
+
+main {
+    padding: 10px;
+}
+
 h1 {
     font-size: 3.5em;
 }
@@ -58,6 +66,7 @@ a {
     border-radius: 25px;
     margin-top: 20px;
     box-shadow: 8px 8px 15px rgba(128, 128, 128, 0.377);
+    margin-bottom: 15px;
 }
 
 .button-ii {
@@ -69,6 +78,10 @@ a {
     margin-right: 30px;
     float: right;
     box-shadow: 8px 8px 15px rgba(128, 128, 128, 0.377);
+}
+
+.menu-icon {
+    display: none;
 }
 
 .rating-icons {
@@ -104,6 +117,73 @@ li {
     font-weight: bold;
 }
 
+/*-----M E D I A-----*/
+@media screen and (max-width: 360px) {
+    .hero-container {
+        background-color: rgba(127, 255, 212, 0.384);
+        border-radius: 15px;
+    }
+
+
+
+
+
+    .hero-container {
+        flex-direction: column-reverse;
+    }
+
+    .hero-text {
+        padding: 10px;
+    }
+
+    .menu-icon {
+        display: inline-flex;
+        font-size: 1.5em;
+    }
+
+    .nav-style {
+        display: none;
+    }
+
+    .hero-container img {
+        width: 100%;
+    }
+
+    .partner-logo {
+        padding: 0;
+        grid-template-columns: repeat(2, 1FR);
+        gap: 1.25em;
+        align-items: center;
+    }
+
+    .partner-logo img {
+        width: 100%;
+    }
+
+    .product-gallery {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2em;
+    }
+
+    .product-card img {
+        width: 100%;
+    }
+
+    .not-hero-container {
+        flex-direction: column-reverse;
+        margin-top: 0;
+    }
+
+    .not-hero-image img {
+        width: 100%;
+    }
+
+
+}
+
+/*------M D E I A styles end------*/
+
+
 /*-----------
 hero section styles
 -------------*/
@@ -125,8 +205,14 @@ second section styles
 ----------*/
 .partner-logo {
     padding: 25px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(7, 1FR);
+    gap: 1.5em;
+    align-items: center;
+}
+
+.partner-logo img {
+    width: 80%;
 }
 
 /*---------------
