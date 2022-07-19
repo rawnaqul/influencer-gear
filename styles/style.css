@@ -286,3 +286,9 @@ footer styles
     margin-left: 5px;
     margin-right: 5px;
 }
+
+@media and (max-width: 360px) {
+    .product-gallery {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
