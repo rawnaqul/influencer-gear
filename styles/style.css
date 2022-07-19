@@ -5,6 +5,8 @@ body {
     background-color: rgba(240, 248, 255, 0.925);
     font-family: roboto;
     margin: 0;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0;
 }
 
@@ -117,71 +119,7 @@ li {
     font-weight: bold;
 }
 
-/*-----M E D I A-----*/
-@media screen and (max-width: 360px) {
-    .hero-container {
-        background-color: rgba(127, 255, 212, 0.384);
-        border-radius: 15px;
-    }
 
-
-
-
-
-    .hero-container {
-        flex-direction: column-reverse;
-    }
-
-    .hero-text {
-        padding: 10px;
-    }
-
-    .menu-icon {
-        display: inline-flex;
-        font-size: 1.5em;
-    }
-
-    .nav-style {
-        display: none;
-    }
-
-    .hero-container img {
-        width: 100%;
-    }
-
-    .partner-logo {
-        padding: 0;
-        grid-template-columns: repeat(2, 1FR);
-        gap: 1.25em;
-        align-items: center;
-    }
-
-    .partner-logo img {
-        width: 100%;
-    }
-
-    .product-gallery {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 2em;
-    }
-
-    .product-card img {
-        width: 100%;
-    }
-
-    .not-hero-container {
-        flex-direction: column-reverse;
-        margin-top: 0;
-    }
-
-    .not-hero-image img {
-        width: 100%;
-    }
-
-
-}
-
-/*------M D E I A styles end------*/
 
 
 /*-----------
@@ -287,8 +225,64 @@ footer styles
     margin-right: 5px;
 }
 
-@media and (max-width: 360px) {
+/*-----M E D I A-----*/
+@media screen and (max-width: 576px) {
+    .hero-container {
+        background-color: rgba(127, 255, 212, 0.384);
+        border-radius: 15px;
+    }
+
+    .hero-container {
+        flex-direction: column-reverse;
+    }
+
+    .hero-text {
+        padding: 10px;
+    }
+
+    .menu-icon {
+        display: inline-flex;
+        font-size: 1.5em;
+    }
+
+    .nav-style {
+        display: none;
+    }
+
+    .hero-container img {
+        width: 100%;
+    }
+
+    .partner-logo {
+        padding: 0;
+        grid-template-columns: repeat(2, 1FR);
+        gap: 1.25em;
+        align-items: center;
+    }
+
+    .partner-logo img {
+        width: 100%;
+    }
+
     .product-gallery {
         grid-template-columns: repeat(1, 1fr);
+        gap: 2em;
     }
+
+    .product-card img {
+        width: 100%;
+    }
+
+    .not-hero-container {
+        flex-direction: column-reverse;
+        margin-top: 0;
+    }
+
+    .not-hero-image img {
+        width: 100%;
+    }
+
+
 }
+
+/*------M D E I A styles ends------*/
